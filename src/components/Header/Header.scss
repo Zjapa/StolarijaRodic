@@ -1,0 +1,20 @@
+@import '@/sass/common';
+@import '@/sass/variables/colors.scss';
+
+header {
+  background-color: $brown-primary;
+  font-weight: bold;
+
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      text-transform: uppercase;
+    }
+  }
+}

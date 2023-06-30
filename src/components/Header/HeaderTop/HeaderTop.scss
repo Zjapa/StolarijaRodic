@@ -1,0 +1,21 @@
+@import '@/sass/common';
+
+.header-top {
+  .header-top-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    gap: 50px;
+    padding: 50px 0px;
+
+    .header-item {
+      display: flex;
+      align-items: center;
+      flex: 1;
+    }
+    .item-desc {
+      font-family: var(--font-lato);
+    }
+  }
+}

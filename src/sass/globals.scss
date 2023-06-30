@@ -1,0 +1,30 @@
+@import './variables/colors';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-self: space-between;
+  font-family: var(--font-raleway);
+}
+
+main {
+  flex: auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

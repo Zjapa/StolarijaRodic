@@ -1,21 +1,31 @@
-@import '@/sass/common';
+@use '@/sass/variables/colors';
 
 .header-top {
   .header-top-items {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 70px;
+    min-height: 70px;
+    padding: 30px 0px;
     gap: 50px;
-    padding: 50px 0px;
-
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+    }
     .header-item {
       display: flex;
       align-items: center;
-      flex: 1;
+      gap: 10px;
+      @media screen and (max-width: 900px) {
+        width: min(100%, 350px);
+      }
+    }
+    .item-title {
+      font-weight: 600;
+      text-transform: uppercase;
     }
     .item-desc {
       font-family: var(--font-lato);
+      color: colors.$grey;
     }
   }
 }

@@ -1,4 +1,4 @@
-@import './variables/colors';
+@use './variables/colors';
 
 * {
   box-sizing: border-box;
@@ -18,13 +18,16 @@ body {
   flex-direction: column;
   justify-self: space-between;
   font-family: var(--font-raleway);
-}
-
-main {
-  flex: auto;
+  color: colors.$dark-brown;
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
 }

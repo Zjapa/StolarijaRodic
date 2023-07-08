@@ -1,16 +1,26 @@
-.hero {
-  background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
-  align-items: center;
-  .hero-title {
-    font-size: 72px;
-    text-transform: uppercase;
-  }
+@use '@/sass/variables/colors';
 
-  .hero-desc {
-    font-size: 32px;
-    margin: 30px 0px;
+.hero {
+  background-color: colors.$bg-baige;
+  .hero-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+
+    .hero-title {
+      font-size: 72px;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    .hero-desc {
+      font-size: 26px;
+      margin: 30px 0px 50px;
+    }
+
+    .hero-image {
+      mix-blend-mode: multiply;
+    }
   }
 }

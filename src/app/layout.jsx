@@ -3,6 +3,7 @@ import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import { Raleway_font, Lato_font } from '@/utils/fonts';
 import '@/sass/globals.scss';
+import '@/sass/common.scss';
 
 export const metadata = {
   title: 'Stolarija Rodić | Početna',

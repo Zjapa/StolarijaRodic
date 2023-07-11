@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <div className='wave'></div>
       <OurService />
     </main>
   );

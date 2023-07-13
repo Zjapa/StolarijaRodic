@@ -10,7 +10,7 @@ const Header = () => {
     <header>
       <div className="container">
         <nav className="header-nav">
-          <Image src={logo} width="100" height="40" alt="Stolarija Rodic Logo" />
+          {/* <Image src={logo} width="100" height="40" alt="Stolarija Rodic Logo" /> */}
           <div className="nav-links">
             {navigationConfig.map((navLink) => (
               <Link key={navLink.title} href={navLink.url}>

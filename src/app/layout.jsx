@@ -8,8 +8,8 @@ import '@/sass/common.scss';
 export const metadata = {
   title: 'Stolarija Rodić | Početna',
   description:
-    'Stolarija Rodić se bavi proizvodnjom i prodajom drvene,drvo-aluminijum,PVC i aluminijumske stolarije Ovlašćeni smo distributer VELUX krovnih prozora.',
-  keywords: 'Stolarija, PVC',
+    'Stolarija Rodić se bavi proizvodnjom i prodajom drvene,drvo-aluminijum,PVC i aluminijumske stolarije. Ovlašćeni smo distributer VELUX krovnih prozora.',
+  keywords: 'Stolarija, PVC, Velux',
 };
 
 export default function RootLayout({ children }) {

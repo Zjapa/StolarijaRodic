@@ -1,7 +1,8 @@
 import Hero from '@/components/Hero/Hero';
 import OurService from '@/components/OurService/OurService';
-import './page.scss';
 import AboutUs from '@/components/AboutUs/AboutUs';
+import ChooseUs from '@/components/ChooseUs/ChooseUs';
+import './page.scss';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <OurService />
       <AboutUs />
+      <ChooseUs/>
     </main>
   );
 }

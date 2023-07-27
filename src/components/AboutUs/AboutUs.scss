@@ -1,61 +1,46 @@
 @use '@/sass/variables/colors';
+@use '@/sass/mixins/title';
 
 .about-us {
-  padding: 80px 0px;
-  background-color: colors.$light-grey;
-  .about-us-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .about-us-title {
-      position: relative;
-      padding-bottom: 10px;
-      text-transform: uppercase;
-      display: inline-block;
-      margin-bottom: 50px;
-
-      &::after {
-        content: '';
-        position: absolute;
-        display: block;
-        bottom: 0;
-        left: 0%;
-        margin: 0 auto;
-        height: 2px;
-        width: 40%;
-        background-color: colors.$brown-primary;
-      }
-    }
-    .about-us-content {
-      display: flex;
-      align-items: center;
-      gap: 50px;
-      .about-us-text {
-        flex: 1;
-
-        .about-us-subtitle {
-          margin-bottom: 40px;
-          font-family: var(--font-lato);
+    padding: 80px 0px;
+    background-color: colors.$light-grey;
+    .about-us-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .about-us-title {
+            @include title.titleStyle;
         }
+        .about-us-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            .about-us-text {
+                flex: 1;
 
-        .about-us-desc {
-          font-family: var(--font-lato);
-          line-height: 1.7em;
-          margin-bottom: 20px;
-          &:nth-of-type(2){
-            margin-bottom:40px;
-          }
+                .about-us-subtitle {
+                    margin-bottom: 40px;
+                    font-family: var(--font-lato);
+                }
+
+                .about-us-desc {
+                    font-family: var(--font-lato);
+                    line-height: 1.7em;
+                    margin-bottom: 20px;
+                    &:nth-of-type(2) {
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+
+            .about-us-image {
+                flex: 1;
+                height: 450px;
+                width: 550px;
+                position: relative;
+                mix-blend-mode: multiply;
+                object-fit: contain;
+            }
         }
-      }
-
-      .about-us-image {
-        flex: 1;
-        height: 450px;
-        width: 550px;
-        position: relative;
-        mix-blend-mode: multiply;
-        object-fit: contain;
-      }
     }
-  }
 }

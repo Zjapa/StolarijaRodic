@@ -5,7 +5,7 @@ import './ChooseUs.scss';
 
 const ChooseUs = () => {
     return (
-        <section>
+        <section className='choose-us'>
             <div className="container choose-us-wrapper">
                 <h1 className="choose-us-title">{IZABERTIE_NAS}</h1>
                 <div className="choose-us-items">

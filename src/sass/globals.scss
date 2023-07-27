@@ -16,7 +16,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  justify-self: space-between;
+  // justify-content: space-between;
   font-family: var(--font-raleway);
   color: colors.$dark-brown;
 }

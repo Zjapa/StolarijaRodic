@@ -1,3 +1,62 @@
+@use '@/sass/variables/colors';
+
 footer {
-  height: 500px;
+    padding: 80px 0px;
+    background-color: colors.$dark-grey;
+    margin-top: auto;
+    .footer-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        @media screen and (max-width: 795px){
+          gap:40px;
+        }
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+            margin-left: 100px;
+            .footer-section-title {
+                position: relative;
+                padding-bottom: 10px;
+                // text-transform: uppercase;
+                display: inline-block;
+                margin-bottom: 30px;
+                color: white;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    bottom: 0;
+                    left: 0%;
+                    margin: 0 auto;
+                    height: 2px;
+                    width: 70px;
+                    background-color: colors.$brown-primary;
+                }
+            }
+
+            .footer-section-items {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .footer-section-item {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+                p {
+                    color: colors.$footer-grey;
+                }
+                a {
+                    color:  colors.$footer-grey;
+                    transition: all .2s ease-in-out;
+                    &:hover {
+                        color: white;
+                        transform: translateX(10px);
+                    }
+                }
+            }
+        }
+    }
 }

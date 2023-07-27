@@ -1,0 +1,44 @@
+@use '@/sass/mixins/title';
+
+.about-us-page {
+    .about-us-page-wrapper {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        :is(.image-container, .about-us-page-content) {
+            flex: 1;
+        }
+        .image-container {
+            position: relative;
+            align-self: flex-start;
+            .about-us-page-img {
+                height: 450px;
+                width: 450px;
+                border-radius: 30px;
+            }
+            .about-us-page-img-bottom {
+                height: 300px;
+                width: 300px;
+                position: absolute;
+                top: 70%;
+                left:40%;
+                border: 20px solid white;
+                border-radius: 30px;
+            }
+        }
+
+        .about-us-page-content {
+            .about-us-page-title {
+                @include title.titleStyle;
+            }
+            .about-us-page-desc {
+                font-family: var(--font-lato);
+                line-height: 1.7em;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

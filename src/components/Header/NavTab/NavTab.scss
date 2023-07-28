@@ -1,0 +1,22 @@
+.nav-tab {
+  position: relative;
+  .title-icon {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    cursor: pointer;
+    :is(:hover, :hover + .dropdown-icon) {
+      opacity: 0.8;
+    }
+
+    .dropdown-icon.clicked {
+      transform: rotate(360deg);
+    }
+
+    .dropdown-icon {
+      padding-top: 2px;
+      transform: rotate(180deg);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}

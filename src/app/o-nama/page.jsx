@@ -10,7 +10,7 @@ import {
     STOLARIJA_RODIC_DESC_3,
     STOLARIJA_RODIC_DESC_4,
     STOLARIJA_RODIC_DESC_5,
-} from './o-nama.cosnt';
+} from './o-nama.const';
 import './page.scss';
 
 export const metadata = {
@@ -28,6 +28,7 @@ const page = () => {
                 <div className="image-container">
                     <Image className="about-us-page-img" src={pvcImg} alt="O nama pvc u izgradnji" />
                     <Image className="about-us-page-img-bottom" src={pvcImg2} alt="O nama pvc stolarija u izgradnji" />
+                    {/* <Image className="about-us-page-img-last" src={pvcImg2} alt="O nama pvc stolarija u izgradnji" /> */}
                 </div>
                 <div className="about-us-page-content">
                     <h2 className="about-us-page-title">{STOLARIJA_RODIC}</h2>

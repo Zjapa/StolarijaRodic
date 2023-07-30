@@ -24,9 +24,9 @@ const Footer = () => {
                     <h2 className="footer-section-title">{FOOTER_CONTACT_US}</h2>
                     <div className="footer-section-items">
                         {contactItems.map((navLink) => (
-                            <div key={navLink.title} className='footer-section-item'>
-                                <Image src={navLink.icon} alt={navLink.title} height={30} />
-                                <p key={navLink.title} href={navLink.url}>
+                            <div key={navLink.desc} className='footer-section-item'>
+                                <Image src={navLink.icon} alt={navLink.alt} height={30} />
+                                <p key={navLink.desc} href={navLink.url}>
                                     {navLink.desc}
                                 </p>
                             </div>

@@ -26,18 +26,22 @@ export const contactItems = [
     {
         icon: locationIcon,
         desc: 'Tošin bunar 85, Beograd, Novi Beograd',
+        alt: 'Slika za lokaciju'
     },
     {
         icon: clockIcon,
         desc: 'Pon - Petak: 09 - 16h | Sub: 09 - 12h',
+        alt: 'Slika za radno vreme '
     },
     {
         icon: phoneIcon, 
         desc: `+011 26 706 74 | 066/208-390 | 066/208-391`,
+        alt: 'Slika za broj telefona'
     },
     {
         icon: mailIcon,
         desc: `stolarijarodic@gmail.com`,
+        alt: 'Slika za email adresu'
     },
 ];
 

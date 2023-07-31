@@ -1,0 +1,35 @@
+@use '@/sass/mixins/title';
+
+.service-page-item-wrapper {
+  max-width: 1080px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  .service-page-item-top {
+    display: flex;
+    gap: 40px;
+
+    .text-container {
+      flex: 1;
+      .service-page-item-subtitle {
+        @include title.titleStyle;
+        margin-bottom: 10px;
+      }
+      .desc-text {
+        margin-bottom: 20px;
+        font-family: var(--font-lato);
+        line-height: 1.7em;
+      }
+    }
+
+    .service-page-item-image {
+      flex: 1;
+      height: 600px;
+      object-fit: cover;
+      width: 490px;
+      border-radius: 30px;
+    }
+  }
+}

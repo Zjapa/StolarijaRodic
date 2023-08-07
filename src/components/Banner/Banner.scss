@@ -1,11 +1,14 @@
-.banner {
-  height: 350px;
-  width: 100%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../img/drveni_prozori/woods.jpg');
-  background-size: cover;
+@use '@/sass/variables/colors';
 
-  background-attachment: fixed;
+.banner {
+  height: 320px;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #a3a3a300 50%, #ffff), url('../../img/hero-bg-compressed.jpg');
+  background-size:cover;
+  background-position: center;
+  // filter: grayscale(50%);
+
+  // background-attachment: fixed;
   .banner-wrapper {
     height: 100%;
     display: grid;

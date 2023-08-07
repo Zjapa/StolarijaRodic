@@ -1,22 +1,33 @@
+@use '@/sass/variables/colors';
 .nav-tab {
-  position: relative;
-  .title-icon {
-    display: flex;
-    gap: 5px;
-    justify-content: space-between;
-    cursor: pointer;
-    :is(:hover, :hover + .dropdown-icon) {
-      opacity: 0.8;
+    position: relative;
+    
+    .nav-title {
+        color: colors.$dark-brown;
     }
+    .title-icon {
+        width: 100%;
+        display: flex;
+        gap: 5px;
+        // justify-content: space-between;
+        cursor: pointer;
+        align-items: center;
 
-    .dropdown-icon.clicked {
-      transform: rotate(360deg);
-    }
+        &:hover > .nav-title {
+            color: colors.$brown-primary;
+        }
+        &:hover > .dropdown-icon {
+            filter: invert(44%) sepia(92%) saturate(290%) hue-rotate(347deg) brightness(92%) contrast(87%);
+        }
 
-    .dropdown-icon {
-      padding-top: 2px;
-      transform: rotate(180deg);
-      transition: all 0.2s ease-in-out;
+        .dropdown-icon.clicked {
+            transform: rotate(360deg);
+        }
+
+        .dropdown-icon {
+            // padding-top: 2px;
+            transform: rotate(180deg);
+            transition: transform 0.2s ease-in-out;
+        }
     }
-  }
 }

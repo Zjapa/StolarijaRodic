@@ -4,7 +4,7 @@ import './ServiceItem.scss';
 import { Button } from '@/components/Button/Button';
 
 const ServiceItem = ({ service }) => {
-    const { title, img, desc } = service;
+    const { title, img, desc,url } = service;
 
     return (
         <article className="service-item">
@@ -13,7 +13,7 @@ const ServiceItem = ({ service }) => {
             <div className="item-content">
                 <h3 className="item-title">{title}</h3>
                 <p className="item-desc">{desc}</p>
-                <Button link="/usluge/unutrasnja-vrata" text="Saznaj više" inverted />
+                <Button link={url} text="Saznaj više" inverted />
             </div>
         </article>
     );

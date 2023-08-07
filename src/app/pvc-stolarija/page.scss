@@ -1,0 +1,104 @@
+@use '@/sass/mixins/title';
+@use '@/sass/variables/colors';
+.pvc-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    .pvc-page-title {
+        @include title.titleStyle;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        font-weight: bold;
+        text-align: center;
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            bottom: 0;
+            // left: 0%;
+            left: 50%;
+            transform: translate(-50%);
+            height: 2px;
+            margin: 0 auto;
+            width: 50%;
+            background-color: colors.$brown-primary;
+        }
+    }
+    .pvc-page-wrapper {
+        max-width: 1200px;
+        padding: 0 80px;
+        padding-bottom: 80px;
+        display: flex;
+        gap: 60px;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            gap: 30px;
+            padding: 0 40px;
+        }
+        .pvc-page-content {
+            .pvc-item {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 40px;
+                padding: 20px;
+                box-shadow: 0 1px 4px 0px rgba(0, 0, 50, 0.3);
+                background-color: colors.$light-grey;
+                min-height: 330px;
+                @media screen and (max-width: 768px) {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    // gap: 30px;
+                }
+                .pvc-page-item-image {
+                    align-self: center;
+                    object-fit: cover;
+                    max-height: 250px;
+                    max-width: 300px;
+                    width: 100%;
+                    height: 100%;
+                    transform: translateX(-50px);
+                    box-shadow: 0 1px 4px 0px rgba(0, 0, 50, 0.3);
+                    aspect-ratio: none;@media screen and (max-width: 768px) {
+                        max-width: 100%;
+                        justify-content: center;
+                        transform: translateX(0);
+                    }
+                }
+                .text-container {
+                    padding: 20px 0px;
+                    @media screen and (max-width: 768px) {
+                        text-align: center;
+                    }
+                    .desc-text {
+                        font-family: var(--font-lato);
+                        line-height: 1.7em;
+                        // color: colors.$grey;
+                    }
+                    .pvc-page-item-title {
+                        @include title.titleStyle;
+                        margin-bottom: 20px;
+                        @media screen and (max-width: 768px) {
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                display: block;
+                                bottom: 0;
+                                // left: 0%;
+                                left: 50%;
+                                transform: translate(-50%);
+                                height: 2px;
+                                margin: 0 auto;
+                                width: 10%;
+                                background-color: colors.$brown-primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

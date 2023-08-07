@@ -5,12 +5,12 @@ import ChooseUs from '@/components/ChooseUs/ChooseUs';
 import './page.scss';
 
 export default function Home() {
-  return (
-    <main>
-      <Hero />
-      <OurService />
-      <AboutUs />
-      <ChooseUs/>
-    </main>
-  );
+    return (
+        <>
+            <Hero />
+            <OurService />
+            <AboutUs />
+            <ChooseUs />
+        </>
+    );
 }

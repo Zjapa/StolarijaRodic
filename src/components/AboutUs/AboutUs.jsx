@@ -15,7 +15,7 @@ const AboutUs = () => {
             <h2 className="about-us-subtitle">{O_STOLARIJI_PODNASLOV}</h2>
             <p className="about-us-desc">{O_STOLARIJI_DESC}</p>
             <p className="about-us-desc">{O_STOLARIJI_DESC_SECOND}</p>
-            <Button link="/usluge/unutrasnja-vrata" text="Saznaj više" />
+            <Button link="/o-nama" text="Pročitaj više" />
           </div>
           <div className="about-us-image">
             <Image src={WindowScetchImg} className="about-us-image" alt="O nama pocetna prozor skica" />

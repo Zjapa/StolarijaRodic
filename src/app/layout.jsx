@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body className={`${Raleway_font.variable} ${Lato_font.variable}`}>
                 <Header />
-                {children}
+                <main>{children}</main>
                 <Footer />
             </body>
         </html>

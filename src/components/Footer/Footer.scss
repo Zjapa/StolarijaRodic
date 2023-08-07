@@ -7,17 +7,21 @@ footer {
     .footer-wrapper {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-        @media screen and (max-width: 795px){
-          gap:40px;
+        gap: 20px;
+        @media screen and (max-width: 768px) {
+            gap: 40px;
         }
         .footer-section {
             display: flex;
             flex-direction: column;
             margin-left: 100px;
+            @media screen and (max-width: 768px) {
+                margin-left: 0px;
+            }
             .footer-section-title {
                 position: relative;
                 padding-bottom: 10px;
-                // text-transform: uppercase;
+
                 display: inline-block;
                 margin-bottom: 30px;
                 color: white;
@@ -39,7 +43,8 @@ footer {
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
-
+                padding-right: 30px;
+        
                 .footer-section-item {
                     display: flex;
                     align-items: center;
@@ -49,8 +54,8 @@ footer {
                     color: colors.$footer-grey;
                 }
                 a {
-                    color:  colors.$footer-grey;
-                    transition: all .2s ease-in-out;
+                    color: colors.$footer-grey;
+                    transition: all 0.2s ease-in-out;
                     &:hover {
                         color: white;
                         transform: translateX(10px);

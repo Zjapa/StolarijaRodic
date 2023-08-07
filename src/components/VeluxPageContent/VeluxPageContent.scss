@@ -1,0 +1,113 @@
+@use '@/sass/mixins/title';
+@use '@/sass/variables/colors';
+
+.velux-service-wrapper {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    .velux-service-header {
+        display: flex;
+        align-items: flex-start;
+        align-items: center;
+        gap: 40px;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            gap: 0px;
+        }
+        .velux-service-header-image {
+            width: 300px;
+            height: 300px;
+            object-fit: contain;
+            transform: scale(1.1);
+        }
+        .velux-service-header-text {
+            margin-top: 30px;
+            font-family: var(--font-lato);
+            line-height: 1.7em;
+        }
+    }
+    .velux-service-main {
+        display: flex;
+        gap:60px;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            gap: 0px;
+        }
+        .velux-service-content {
+            flex: 2;
+            .velux-service-item-subtitle {
+                @include title.titleStyle;
+                margin-bottom: 20px;
+                text-transform: lowercase;
+            }
+            .velux-service-list {
+                list-style: none;
+                .velux-service-list-item {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    font-family: var(--font-lato);
+                    color: colors.$dark-grey;
+                    font-size: 16px;
+                    &::before {
+                        content: '•';
+                        padding-right: 10px;
+                        color: colors.$brown-primary;
+                    }
+                }
+            }
+        }
+        .service-page-sidebar {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            @media screen and (max-width: 768px) {
+                flex-direction: column-reverse;
+            }
+            .service-page-side-navigation {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 30px;
+                gap: 15px;
+                min-height: 410px;
+
+                .side-nav-title {
+                    color: colors.$grey;
+                    width: 100%;
+
+                    padding: 20px;
+                    font-family: var(--font-lato);
+                    box-shadow: 0 1px 4px 0px rgba(0, 0, 50, 0.3);
+                    transition: all 0.1s ease-in-out;
+                    &:hover {
+                        box-shadow: 0 0px 4px 1px rgba($color: colors.$brown-active, $alpha: 1);
+                        color: colors.$brown-active;
+                    }
+                    &.active {
+                        background-color: colors.$brown-active;
+                        box-shadow: 0 0px 4px 1px rgba($color: colors.$brown-active, $alpha: 1);
+                        color: white;
+                    }
+                }
+            }
+            .service-page-sidebar-list {
+                list-style: none;
+                margin-bottom: 30px;
+                .service-page-sidebar-item {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    font-family: var(--font-lato);
+                    color: colors.$grey;
+                    font-size: 16px;
+                    &::before {
+                        content: '•';
+                        padding-right: 10px;
+                        color: colors.$brown-primary;
+                    }
+                }
+            }
+        }
+    }
+}

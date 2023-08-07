@@ -1,6 +1,6 @@
 export const STOLARIJA_RODIC = 'Stolarija Rodić';
 
-export const STOLARIJA_RODIC_DESC = `Stolarija Rodić je  se bavi proizvodnjom i prodajom građevinske stolarije. 
+export const STOLARIJA_RODIC_DESC = `Stolarija Rodić se bavi proizvodnjom i prodajom građevinske stolarije. 
 
 Naš proizvodni program baziran je na izradi stolarije od različitih vrsta materijala, te se u našoj ponudi nalazi stolarija od kombinacije materijala kao što je drvo aluminijum stolarija, ali i klasičnih materijala, odnosno drvene i PVC stolarije.`;
 

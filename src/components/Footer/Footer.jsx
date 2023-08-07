@@ -9,7 +9,9 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="container footer-wrapper">
-                <section className="footer-section"></section>
+                <section className="footer-section">
+                    
+                </section>
                 <section className="footer-section">
                     <h2 className="footer-section-title">{FOOTER_SITE_MAP_TITLE}</h2>
                     <div className="footer-section-items">

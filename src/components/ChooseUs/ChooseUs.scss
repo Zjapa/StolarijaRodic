@@ -20,6 +20,9 @@
                 display: flex;
                 align-items: center;
                 gap: 10px;
+                @media screen and (max-width: 768px) {
+                    margin-left: 0px;
+                }
                 .choose-item-title {
                     text-transform: uppercase;
                 }

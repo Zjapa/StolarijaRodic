@@ -1,0 +1,50 @@
+@use '@/sass/mixins/title';
+@use '@/sass/variables/colors';
+
+.table {
+    max-width: 700px;
+    width: 100%;
+    margin: 50px 0;
+    .table-row {
+        margin: 10px auto;
+        padding: 15px 0px;
+        box-shadow: 0 1px 4px 0px rgba(0, 0, 50, 0.3);
+        display: flex;
+        align-items: center;
+    }
+    .table-head {
+        background: colors.$brown-primary;
+        box-shadow: none;
+        color: #fff;
+    }
+
+    .table-cell {
+        flex: 1;
+        text-align: center;
+        // padding: 5px 0;
+        vertical-align: middle;
+        .cell-text {
+            font-family: var(--font-lato);
+            line-height: 1.7em;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+        }
+    }
+    .first-cell {
+        // text-align: left;
+        border-right: 1px solid colors.$brown-primary;
+        @media only screen and (max-width: 600px) {
+            .table-row {
+                text-align: left;
+                font-size: 12px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .table-row {
+            font-size: 12px;
+        }
+    }
+}

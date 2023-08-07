@@ -36,8 +36,8 @@ export const navigationConfig = [
           { title: 'Standard krovni prozori - beli', url: 'velux-standard-beli'},
           { title: 'Standard plus krovni prozori - drvo', url: 'velux-standard-plus-drvo' },
           { title: 'Standard plus krovni prozori - beli', url: 'velux-standard-plus-beli' },
-          { title: 'Unutrašnje roletne - zaštita od svetlosti', url: 'roletne-zastita-svetlosti' },
-          { title: 'Spoljašnje mrežice - zaštita od toplote', url: 'mrezica-zastita-toplota' },
+          { title: 'Unutrašnje roletne - zaštita od svetlosti', url: 'velux-zastita-svetlost' },
+          { title: 'Spoljašnje mrežice - zaštita od toplote', url: 'velux-zastita-toplota' },
       ],
   },
     {

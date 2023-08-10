@@ -18,6 +18,9 @@ footer {
             @media screen and (max-width: 768px) {
                 margin-left: 0px;
             }
+            .logo-footer {
+                margin-bottom: auto;
+            }
             .footer-section-title {
                 position: relative;
                 padding-bottom: 10px;
@@ -44,7 +47,7 @@ footer {
                 flex-direction: column;
                 gap: 20px;
                 padding-right: 30px;
-        
+
                 .footer-section-item {
                     display: flex;
                     align-items: center;

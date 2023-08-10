@@ -1,5 +1,4 @@
-import veluxStandardDrvoImg from '@/img/velux/velux-standard.png';
-import veluxStandardBeliDrvoImg from '@/img/velux/velux-standard-beli.png';
+
 
 
 const STANDARD_SERIJA =
@@ -10,7 +9,7 @@ const STANDARD_PLUS_SERIJA =
 export const veluxUsluge = {
     'velux-standard-drvo': {
         pageTitle: 'Velux standard krovni prozori',
-        img: veluxStandardDrvoImg,
+        img: '/images/velux/velux-standard.webp',
         imageText: STANDARD_SERIJA,
         subtitle: '5 godina garancije na BFX set',
         tableInfoList: [
@@ -51,7 +50,7 @@ export const veluxUsluge = {
     },
     'velux-standard-beli': {
         pageTitle: 'Velux standard krovni prozori - beli',
-        img: veluxStandardBeliDrvoImg,
+        img: '/images/velux/velux-standard-beli.webp',
         imageText: STANDARD_SERIJA,
         subtitle: '5 godina garancije na BFX set',
         tableInfoList: [
@@ -92,7 +91,7 @@ export const veluxUsluge = {
     },
     'velux-standard-plus-drvo': {
         pageTitle: 'Velux Standard plus krovni prozori - drvo',
-        img: veluxStandardDrvoImg,
+        img: '/images/velux/velux-standard.webp',
         imageText: STANDARD_PLUS_SERIJA,
         subtitle: '5 godina garancije na BFX set',
         tableInfoList: [
@@ -133,7 +132,7 @@ export const veluxUsluge = {
     },
     'velux-standard-plus-beli': {
         pageTitle: 'Velux Standard plus krovni prozori - beli',
-        img: veluxStandardBeliDrvoImg,
+        img: '/images/velux/velux-standard-beli.webp',
         imageText: STANDARD_PLUS_SERIJA,
         subtitle: '5 godina garancije na BFX set',
         tableInfoList: [

@@ -9,7 +9,7 @@ export const navigationConfig = [
     },
     {
         title: 'Drvena stolarija',
-        url: '',
+        url: 'camovo-drvo',
         dropdown: [
             { title: 'Drveni prozori - čamovo drvo', url: 'camovo-drvo' },
             { title: 'Drvo - Aluminijum stolarija', url: 'drvo-aluminijum' },
@@ -19,7 +19,7 @@ export const navigationConfig = [
     },
     {
         title: 'Unutrašnja vrata',
-        url: '',
+        url: 'unutrasnja-vrata-puno-drvo',
         dropdown: [
             { title: 'Medijapan - folija', url: 'medijapan-folija' },
             { title: 'Medijapan - farbani', url: 'medijapan-farbani' },
@@ -29,7 +29,7 @@ export const navigationConfig = [
     },
     {
       title: 'Velux krovni prozori',
-      url: '',
+      url: 'velux-ovlasceni-prodavac',
       dropdown: [
           { title: 'Velux', url: 'velux-ovlasceni-prodavac' },
           { title: 'Standard krovni prozori - drvo', url: 'velux-standard-drvo' },

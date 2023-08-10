@@ -1,17 +1,4 @@
-import unutrasnjaVrataImg from '../../img/sobna_vrata/unutrasnja-vrata1.jpg';
-import ulaznaVrata from '../../img/pun_drvo/Ulazna-vrata.jpg';
-import veluxImg from '../../img/velux/Velux-img.webp';
-import pvcImg from '../../img/pvc/pvc-stolarija.jpg';
 
-import camovoDrvoImg from '@/img/drveni_prozori/slika11.webp';
-import drvoAluminijumImg from '@/img/drveni_prozori/drvo-aluminijum.jpg';
-import drveniKapakImg from '@/img/drveni_kapak/drveni-kapak.jpg';
-import ulaznaVrataImg from '@/img/pun_drvo/Ulazna-vrata.jpg';
-import medijapanFolijaImg from '@/img/sobna_vrata/slika16.jpg';
-import medijapanFarbaniImg from '@/img/sobna_vrata/slika15.jpg';
-import medijapanFurniraniImg from '@/img/sobna_vrata/slika14.jpg';
-import veluxZastitaSvetlostImg from '@/img/velux/zastita_od_svetlosti.jpg';
-import veluxOvlasceniProdavacImg from '@/img/velux/ovlašteni_prodavac.jpg';
 
 export const NASE_USLUGE = 'Naše Usluge';
 
@@ -37,37 +24,37 @@ export const CAMOVO_DRVO =
 
 export const serviceItems = [
     {
-        img: unutrasnjaVrataImg,
+        img: '/images/sobna_vrata/unutrasnja-vrata1.webp',
         title: 'Unutrašnja vrata',
         desc: UNUTRASNJA_VRATA,
         url: '/unutrasnja-vrata-puno-drvo',
     },
     {
-        img: ulaznaVrata,
+        img: '/images/pun_drvo/Ulazna-vrata.webp',
         title: 'Ulazna vrata',
         desc: DRVENA_STOLARIJA,
         url: '/ulazna-vrata-puno-drvo',
     },
     {
-        img: veluxImg,
+        img: '/images/velux/Velux-img.webp',
         title: 'Velux prozori',
         desc: VELUX_PROZORI,
         url: '/velux-ovlasceni-prodavac',
     },
     {
-        img: pvcImg,
+        img: '/images/pvc/pvc-stolarija.webp',
         title: 'Pvc stolarija',
         desc: PVC_STOLARIJA,
         url: '/pvc-stolarija',
     },
     {
-        img: medijapanFolijaImg,
+        img: '/images/sobna_vrata/slika16.webp',
         title: 'Unutrašnja vrata - medijapan',
         desc: MEDIJAPAN_UNUTRASNJA_VRATA,
         url: '/medijapan-folija',
     },
     {
-        img: camovoDrvoImg,
+        img: '/images/drveni_prozori/slika11.webp',
         title: 'Drveni prozori - čamovo drvo',
         desc: CAMOVO_DRVO,
         url: '/camovo-drvo',

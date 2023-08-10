@@ -1,8 +1,7 @@
 import Banner from '@/components/Banner/Banner';
 import Image from 'next/image';
 import React from 'react';
-import pvcImg from '@/img/pvc-windows-drawing.png';
-import pvcImg2 from '@/img/pvc-windows-drawing2.png';
+
 import {
   STOLARIJA_RODIC,
   STOLARIJA_RODIC_DESC,
@@ -18,6 +17,9 @@ export const metadata = {
   description:
     'Stolarija Rodić se bavi proizvodnjom i prodajom drvene,drvo-aluminijum,PVC i aluminijumske stolarije. Ovlašćeni smo distributer VELUX krovnih prozora.',
   keywords: 'Stolarija, PVC, Velux',
+  alternates:{
+    canonical: `https://www.stolarijarodic.com/o-nama`
+}
 };
 
 const page = () => {
@@ -26,8 +28,8 @@ const page = () => {
       <Banner title="O nama" />
       <div className="container about-us-page-wrapper">
         <div className="image-container">
-          <Image className="about-us-page-img" src={pvcImg} alt="O nama pvc u izgradnji" />
-          <Image className="about-us-page-img-bottom" src={pvcImg2} alt="O nama pvc stolarija u izgradnji" />
+          <Image className="about-us-page-img" src='/images/pvc-windows-drawing.webp' alt="O nama pvc u izgradnji" width={450} height={450}/>
+          <Image className="about-us-page-img-bottom" src='/images/pvc-windows-drawing2.webp' alt="O nama pvc stolarija u izgradnji" height={300} width={300}/>
           {/* <Image className="about-us-page-img-last" src={pvcImg2} alt="O nama pvc stolarija u izgradnji" /> */}
         </div>
         <div className="about-us-page-content">

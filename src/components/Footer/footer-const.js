@@ -1,7 +1,4 @@
-import locationIcon from '@/img/svg/location.svg';
-import clockIcon from '@/img/svg/clock.svg';
-import phoneIcon from '@/img/svg/phone.svg';
-import mailIcon from '@/img/svg/mail.svg';
+
 
 export const serviceItems = [
     {
@@ -24,22 +21,22 @@ export const serviceItems = [
 
 export const contactItems = [
     {
-        icon: locationIcon,
+        icon: '/images/svg/location.svg',
         desc: 'Tošin bunar 85, Beograd, Novi Beograd',
         alt: 'Slika za lokaciju'
     },
     {
-        icon: clockIcon,
+        icon: '/images/svg/clock.svg',
         desc: 'Pon - Petak: 09 - 16h | Sub: 09 - 12h',
         alt: 'Slika za radno vreme '
     },
     {
-        icon: phoneIcon, 
+        icon: '/images/svg/phone.svg', 
         desc: `+011 26 706 74 | 066/208-390 | 066/208-391`,
         alt: 'Slika za broj telefona'
     },
     {
-        icon: mailIcon,
+        icon: '/images/svg/mail.svg',
         desc: `stolarijarodic@gmail.com`,
         alt: 'Slika za email adresu'
     },

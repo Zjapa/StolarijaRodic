@@ -1,6 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
-import HeroImage from '@/img/modern-window-building.png';
 import { HERO_CONTENT_DESC, HERO_CONTENT_TITLE } from './hero-const.js';
 import { Button } from '../Button/Button.jsx';
 import './Hero.scss';

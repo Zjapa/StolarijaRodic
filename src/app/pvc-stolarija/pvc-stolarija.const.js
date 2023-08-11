@@ -1,10 +1,8 @@
-import pvcProzor1 from '@/img/pvc/slika6.jpg';
-import pvcProzor2 from '@/img/pvc/slika1.jpg';
-import pvcProzor3 from '@/img/pvc/slika7.jpg';
+
 
 export const pvcContent = [
     {
-        img: pvcProzor1,
+        img: '/images/pvc/slika6.webp',
         title: 'PVC Profil',
         imgAlt: 'PVC prozor profil slika',
         desc: `Profili za PVC stolariju izradjeni su od Nemačkog šestokomornog profila INOUTIC ( TISSEN ) i
@@ -14,7 +12,7 @@ export const pvcContent = [
                 obično, okretno nagibno, klizna vrata, kombi sistem,harmonika, klizna stena…`,
     },
     {
-        img: pvcProzor2,
+        img: '/images/pvc/slika1.webp',
         title: 'Prednost PVC stolarije',
         imgAlt: 'PVC prozor prednost slika',
         desc: ` PVC prozori imaju široka krila i ramove što kod drvenih prozora nije slučaj pa se iz tog razloga
@@ -26,7 +24,7 @@ export const pvcContent = [
         potrebno održavanje. Tržište pokazuje da proizvodnja i prodaja PVC stolarije stalno raste.`,
     },
     {
-        img: pvcProzor3,
+        img: '/images/pvc/slika7.webp',
         title: 'Proizvodnja PVC stolarije',
         imgAlt: 'PVC prozor',
         desc: `  Sama proizvodnja PVC stolarije je vrlo jednostavna što za posledicu ima veliki broj priučenih

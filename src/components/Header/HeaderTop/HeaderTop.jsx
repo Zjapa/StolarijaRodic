@@ -10,7 +10,7 @@ const HeaderTop = () => {
         <div className="header-top-items">
           {headerTopItems.map((item) => (
             <div key={item.title} className="header-item">
-              <Image src={item.icon} alt={item.title} height={30} />
+              <Image src={item.icon} alt={item.title} height={30}  width={30}/>
               <div className="item-content">
                 <h4 className="item-title">{item.title}</h4>
                 <p className="item-desc">{item.desc}</p>

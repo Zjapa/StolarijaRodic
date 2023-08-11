@@ -1,7 +1,9 @@
 @use '@/sass/variables/colors';
 .nav-tab {
     position: relative;
-    
+    @media screen and (max-width:768px){
+        text-align: center;
+    }
     .nav-title {
         color: colors.$dark-brown;
     }
@@ -9,7 +11,7 @@
         width: 100%;
         display: flex;
         gap: 5px;
-        // justify-content: space-between;
+        justify-content: center;
         cursor: pointer;
         align-items: center;
 

@@ -7,7 +7,7 @@ const ProjectItem = ({ project }) => {
 
     return (
         <article className="project-item">
-            <Image src={img} alt={title} className="item-image" />
+            <Image src={img} alt={title} className="item-image" height={300} width={300}/>
 
             <div className="item-content">
                 <h3 className="item-title">{title}</h3>

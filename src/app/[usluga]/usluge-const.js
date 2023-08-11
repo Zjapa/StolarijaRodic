@@ -1,13 +1,15 @@
-import camovoDrvoImg from '@/img/drveni_prozori/slika11.webp';
-import drvoAluminijumImg from '@/img/drveni_prozori/drvo-aluminijum.jpg';
-import drveniKapakImg from '@/img/drveni_kapak/drveni-kapak.jpg';
-import ulaznaVrataImg from '@/img/pun_drvo/Ulazna-vrata.jpg';
-import medijapanFolijaImg from '@/img/sobna_vrata/slika16.jpg';
-import medijapanFarbaniImg from '@/img/sobna_vrata/slika15.jpg';
-import medijapanFurniraniImg from '@/img/sobna_vrata/slika14.jpg';
-import unutrasnjaVrataImg from '@/img/sobna_vrata/unutrasnja-vrata1.jpg';
-import veluxZastitaSvetlostImg from '@/img/velux/zastita_od_svetlosti.jpg';
-import veluxOvlasceniProdavacImg from '@/img/velux/ovlašteni_prodavac.jpg';
+// import camovoDrvoImg from '/images/drveni_prozori/slika11.webp';
+// import drvoAluminijumImg from '/images/drveni_prozori/drvo-aluminijum.webp';
+// import drveniKapakImg from '/images/drveni_kapak/drveni-kapak.webp';
+// import ulaznaVrataImg from '/images/pun_drvo/Ulazna-vrata.webp';
+// import medijapanFolijaImg from '/images/sobna_vrata/slika16.webp';
+// import medijapanFarbaniImg from '/images/sobna_vrata/slika15.webp';
+// import medijapanFurniraniImg from '/images/sobna_vrata/slika14.webp';
+// import unutrasnjaVrataImg from '/images/sobna_vrata/unutrasnja-vrata1.webp';
+// import veluxZastitaSvetlostImg from '/images/velux/zastita_od_svetlosti.webp';
+// import veluxOvlasceniProdavacImg from '/images/velux/ovlašteni_prodavac.webp';
+
+import { camovoDrvoPhotos } from './photos';
 
 const CAMOVO_DRVO =
     'Asortiman naših prozora je širok iz prostog razloga, jer delimično podržavamo argumente pristalica koje zastupaju svaki od ova četiri tipa stolarije, a pošto želimo da zadovoljimo svačiji ukus potrudili smo se da od prozora koje želite napravimo proizvod vrhunskog kvaliteta u svojoj klasi.';
@@ -95,12 +97,15 @@ const UNUTRASNJA_VRATA_4 =
 const UNUTRASNJA_VRATA_5 =
     'Zato u koliko želite klizna vrata, staklena vrata,kupatilska vrata, ulazna drvena vrata ili bilo koji sličan model kontaktirajte nas,da predmet montiran u vašoj kući ili stanu oplemenimo i napravimo ukras vašeg doma.';
 
+
+
+
 export const usluge = {
     'camovo-drvo': {
         pageTitle: 'Čamovo drvo',
         title: 'Drveni prozori - čamovo drvo',
         titleSecond: 'Dokazano je',
-        img: camovoDrvoImg,
+        img: '/images/drveni_prozori/slika11.webp',
         text: [CAMOVO_DRVO, CAMOVO_DRVO_2, CAMOVO_DRVO_3],
         sideNavigation: [
             { title: 'Drveni prozori - čamovo drvo', url: 'camovo-drvo' },
@@ -115,12 +120,13 @@ export const usluge = {
             'Termo staklo 4/16/4',
             '2 dihtung gume',
         ],
+       photos: camovoDrvoPhotos, 
     },
     'drvo-aluminijum': {
         pageTitle: 'Drvo aluminijum',
         title: 'Drvo - aluminijum stolarija',
         titleSecond: 'Osnovne prednosti drvo aluminijum prozora',
-        img: drvoAluminijumImg,
+        img: '/images/drveni_prozori/drvo-aluminijum.webp',
         text: [DRVO_ALU, DRVO_ALU_2, DRVO_ALU_3],
         sideNavigation: [
             { title: 'Drveni prozori - čamovo drvo', url: 'camovo-drvo' },
@@ -150,7 +156,7 @@ export const usluge = {
         pageTitle: 'Drveni kapak',
         title: 'Drveni kapak',
         titleSecond: '',
-        img: drveniKapakImg,
+        img: '/images/drveni_kapak/drveni-kapak.webp',
         text: [DRVENI_KAPAK],
         sideNavigation: [
             { title: 'Drveni prozori - čamovo drvo', url: 'camovo-drvo' },
@@ -164,7 +170,7 @@ export const usluge = {
         pageTitle: 'Ulazna vrata od punog drveta',
         title: 'Lepota dizajna',
         titleSecond: '',
-        img: ulaznaVrataImg,
+        img: '/images/pun_drvo/Ulazna-vrata.webp',
         text: [ULAZNA_VRATA_PUNO_DRVO, ULAZNA_VRATA_PUNO_DRVO_2, ULAZNA_VRATA_PUNO_DRVO_3, ULAZNA_VRATA_PUNO_DRVO_4],
         sideNavigation: [
             { title: 'Drveni prozori - čamovo drvo', url: 'camovo-drvo' },
@@ -187,7 +193,7 @@ export const usluge = {
         pageTitle: 'Medijapan vrata obložena folijom',
         title: 'Medijapan vrata',
         titleSecond: '',
-        img: medijapanFolijaImg,
+        img: '/images/sobna_vrata/slika16.webp',
         text: [MEDIJAPAN_FOLIJA, MEDIJAPAN_FOLIJA_2, MEDIJAPAN_FOLIJA_3, MEDIJAPAN_FOLIJA_4, MEDIJAPAN_FOLIJA_5],
         sideNavigation: [
             { title: 'Medijapan - folija', url: 'medijapan-folija' },
@@ -201,7 +207,7 @@ export const usluge = {
         pageTitle: 'medijapan farbani',
         title: 'Medijapan farbani',
         titleSecond: '',
-        img: medijapanFarbaniImg,
+        img: '/images/sobna_vrata/slika15.webp',
         text: [MEDIJAPAN_FARBANI, MEDIJAPAN_FARBANI_2, MEDIJAPAN_FARBANI_3, MEDIJAPAN_FARBANI_4, MEDIJAPAN_FARBANI_5],
         sideNavigation: [
             { title: 'Medijapan - folija', url: 'medijapan-folija' },
@@ -215,7 +221,7 @@ export const usluge = {
         pageTitle: 'medijapan furnirani',
         title: 'Medijapan farbani',
         titleSecond: '',
-        img: medijapanFurniraniImg,
+        img: '/images/sobna_vrata/slika14.webp',
         text: [
             MEDIJAPAN_FURNIRANI,
             MEDIJAPAN_FURNIRANI_2,
@@ -235,7 +241,7 @@ export const usluge = {
         pageTitle: 'Unutrašnja vrata od punog drveta',
         title: 'Unutrašnja vrata',
         titleSecond: '',
-        img: unutrasnjaVrataImg,
+        img: '/images/sobna_vrata/unutrasnja-vrata1.webp',
         text: [UNUTRASNJA_VRATA, UNUTRASNJA_VRATA_2, UNUTRASNJA_VRATA_3, UNUTRASNJA_VRATA_4, UNUTRASNJA_VRATA_5],
         sideNavigation: [
             { title: 'Medijapan - folija', url: 'medijapan-folija' },
@@ -250,7 +256,7 @@ export const usluge = {
         pageTitle: 'Velux unutrašnje roletne- zaštita od svetlosti',
         title: 'Siesta unutrašnje roletne ',
         titleSecond: 'DKL--, DML--, DSL--',
-        img: veluxZastitaSvetlostImg,
+        img: '/images/velux/zastita_od_svetlosti.webp',
         text: [
             'Ova siesta unutrašnja roletna potpuno blokira svetlost, pa je idealna za spavaće sobe. Dizajnirana je da se savršeno uklapa i lako ugrađuje bez potrebe za merenjem, skraćivanjem ili rezanjem. Na raspolaganju su vam bele bočne vođice, kao i one u boji aluminijuma.',
         ],
@@ -274,7 +280,7 @@ export const usluge = {
     'velux-zastita-toplota': {
         pageTitle: 'Spoljašnje mrežice - zaštita od toplote',
         title: 'Prijatna temperatura u potkrovlju uz efikasnu zaštitu od toplote',
-        img: veluxZastitaSvetlostImg,
+        img: '/images/velux/zastita_od_svetlosti.webp',
         text: [
             'Održite prijatnu temperaturu u potkrovlju uz efikasnu zaštitu od toplote',
             'Spoljne VELUX mrežice smanjuju pasivno zagrevanje i održavaju hladnu, ugodnu temperaturu u vašoj sobi, a istovremeno omogućuju uživanje u pogledu i puštaju sunčevu svetlost.',
@@ -301,7 +307,7 @@ export const usluge = {
     'velux-ovlasceni-prodavac': {
         pageTitle: 'Stolarija Rodić je ovlašćeni prodavac VELUX prozora',
         title: 'Klijentima nudimo:',
-        img: veluxOvlasceniProdavacImg,
+        img: '/images/velux/velux-ovlasceni.webp',
         text: [],
 
         subtitle: '',

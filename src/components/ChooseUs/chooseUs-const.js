@@ -1,38 +1,33 @@
-import shop from '@/img/svg/shop.svg';
-import people from '@/img/svg/people.svg';
-import quality from '@/img/svg/quality.svg';
-import chat from '@/img/svg/chat.svg';
-import design from '@/img/svg/design.svg';
-import support from '@/img/svg/support.svg';
+
 
 export const chooseUsItems = [
     {
-        icon: shop,
+        icon: '/images/svg/shop.svg',
         title: '20+',
         desc: 'Godina iskustva',
     },
     {
-        icon: people,
+        icon: '/images/svg/people.svg',
         title: '20.000+',
         desc: 'Zadovoljnih klijenata',
     },
     {
-        icon: quality,
+        icon: '/images/svg/quality.svg',
         title: 'Kvalitet',
         desc: 'Naših usluga',
     },
     {
-        icon: chat,
+        icon: '/images/svg/chat.svg',
         title: 'Podrška',
         desc: 'Klijentima',
     },
     {
-        icon: design,
+        icon: '/images/svg/design.svg',
         title: 'Kreativan',
         desc: 'Dizaj',
     },
     {
-        icon: support,
+        icon: '/images/svg/support.svg',
         title: 'Besplatna',
         desc: 'Konsultacija',
     },

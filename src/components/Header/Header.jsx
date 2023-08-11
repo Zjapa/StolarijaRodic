@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import logo from '@/img/logo.png';
 import { navigationConfig } from './nav-const';
 import HeaderTop from './HeaderTop/HeaderTop';
 import NavTab from './NavTab/NavTab';
@@ -17,8 +16,8 @@ const Header = () => {
     <header>
       <HeaderTop />
       <div className="header-bottom">
-        <div className=" header-bottom-container">
-          <Image src={logo} width="100" height="40" alt="Stolarija Rodic Logo" className="logo" />
+        <div className="container header-bottom-container">
+          <Image src="/images/logo.png" width="100" height="40" alt="Stolarija Rodic Logo" className="logo" />
           <nav className={`nav-links  ${toggleMenu ? 'toggle' : ''}`}>
             {navigationConfig.map((navLink) => (
               <NavTab

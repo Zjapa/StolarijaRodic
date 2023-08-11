@@ -1,21 +1,21 @@
 // LOKACIJA,RADNO VREME, BROJ TELEFONA
-import locationIcon from '@/img/svg/location.svg';
-import clockIcon from '@/img/svg/clock.svg';
-import phoneIcon from '@/img/svg/phone.svg';
+// import locationIcon from '/images/svg/location.svg';
+// import clockIcon from '/images/svg/clock.svg';
+// import phoneIcon from '/images/svg/phone.svg';
 
 export const headerTopItems = [
   {
-    icon: locationIcon,
+    icon: '/images/svg/location.svg',
     title: 'Lokacija',
     desc: 'Tošin bunar 85, Beograd, Novi Beograd',
   },
   {
-    icon: clockIcon,
+    icon: '/images/svg/clock.svg',
     title: 'Radno vreme',
     desc: 'Pon - Petak: 09 - 16h | Sub: 09 - 12h',
   },
   {
-    icon: phoneIcon,
+    icon: '/images/svg/phone.svg',
     title: 'Telefon',
     desc: `+011 26 706 74 | 066/208-390 | 066/208-391`,
   },

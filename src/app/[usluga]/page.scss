@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 80px;
     .service-page-item-title {
         @include title.titleStyle;
         margin-top: 80px;
@@ -131,5 +132,10 @@
                 }
             }
         }
+    }
+    .gallery-container{
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
     }
 }

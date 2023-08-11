@@ -2,7 +2,6 @@ import React from 'react';
 import { O_STOLARIJI, O_STOLARIJI_DESC, O_STOLARIJI_DESC_SECOND, O_STOLARIJI_PODNASLOV } from './AboutUs-const';
 import Image from 'next/image';
 import './AboutUs.scss';
-import WindowScetchImg from '@/img/modern-window-building.jpg';
 import { Button } from '../Button/Button';
 
 const AboutUs = () => {
@@ -18,7 +17,7 @@ const AboutUs = () => {
             <Button link="/o-nama" text="Pročitaj više" />
           </div>
           <div className="about-us-image">
-            <Image src={WindowScetchImg} className="about-us-image" alt="O nama pocetna prozor skica" />
+            <Image src='/images/modern-window-building.webp' className="about-us-image" alt="O nama pocetna prozor skica" height={450} width={550}/>
           </div>
         </div>
       </div>

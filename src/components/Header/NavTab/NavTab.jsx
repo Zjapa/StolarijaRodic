@@ -4,14 +4,17 @@ import Dropdown from '@/components/Dropdown/Dropdown';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useRef, useEffect } from 'react';
-import dropdownIcon from '@/img/svg/dropdown-arrow.svg';
 import './NavTab.scss';
 
-const NavTab = ({ title, url, dropdown,handleToggleMenu }) => {
-    const [isClicked, setIsClicked] = useState(false);
+const NavTab = ({ title, url, dropdown, handleToggleMenu }) => {
+    const [isDropdownClicked, setIsDropdownClicked] = useState(false);
     const tabRef = useRef();
     const isDropdown = dropdown?.length;
-    const showDropdown = isDropdown && isClicked;
+    const showDropdown = isDropdown && isDropdownClicked;
+
+    const handleDropdown = () => {
+        setIsDropdownClicked(prevClicked => !prevClicked);
+    };
 
     const navTitle = isDropdown ? (
         <p href={url} className="nav-title">
@@ -25,30 +28,29 @@ const NavTab = ({ title, url, dropdown,handleToggleMenu }) => {
 
     //Handle closing dropdown on outside click
     useEffect(() => {
-        const handleDropdown = (e) => {
-            if (!tabRef.current.contains(e.target)) setIsClicked(false);
+        const handleOutsideDropdown = (e) => {
+            if (!tabRef.current.contains(e.target)) setIsDropdownClicked(false);
         };
-        document.addEventListener('mousedown', handleDropdown);
+        document.addEventListener('mousedown', handleOutsideDropdown);
 
-        return () => document.removeEventListener('mousedown', handleDropdown);
+        return () => document.removeEventListener('mousedown', handleOutsideDropdown);
     });
 
     return (
-        <div ref={tabRef} className="nav-tab" onClick={() => setIsClicked(!isClicked)}>
+        <div ref={tabRef} className="nav-tab" onClick={handleDropdown}>
             <div className="title-icon">
                 {navTitle}
                 {isDropdown && (
                     <Image
-                        src={dropdownIcon}
+                        src="/images/svg/dropdown-arrow.svg"
                         alt="Icon for dropdown"
                         height={10}
                         width={15}
-                        className={`dropdown-icon ${isClicked ? 'clicked' : null}`}
+                        className={`dropdown-icon ${isDropdownClicked ? 'clicked' : ''}`}
                     />
                 )}
             </div>
-
-            {showDropdown && <Dropdown dropdownItems={dropdown} />}
+            <Dropdown dropdownItems={dropdown} showDropdown={showDropdown} handleToggleMenu={handleToggleMenu} />
         </div>
     );
 };

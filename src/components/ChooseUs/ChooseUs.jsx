@@ -11,7 +11,7 @@ const ChooseUs = () => {
                 <div className="choose-us-items">
                     {chooseUsItems.map((item) => (
                         <div key={item.title} className='choose-item'>
-                            <Image src={item.icon} alt={item.title} height={40} />
+                            <Image src={item.icon} alt={item.title} height={40} width={40}/>
                             <div className="choose-item-content">
                                 <h4 className="choose-item-title">{item.title}</h4>
                                 <p className="choose-item-desc">{item.desc}</p>

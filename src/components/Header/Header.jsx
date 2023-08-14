@@ -16,7 +16,7 @@ const Header = () => {
     <header>
       <HeaderTop />
       <div className="header-bottom">
-        <div className="container header-bottom-container">
+        <div className=" header-bottom-container">
           <Image src="/images/logo.png" width="100" height="40" alt="Stolarija Rodic Logo" className="logo" />
           <nav className={`nav-links  ${toggleMenu ? 'toggle' : ''}`}>
             {navigationConfig.map((navLink) => (

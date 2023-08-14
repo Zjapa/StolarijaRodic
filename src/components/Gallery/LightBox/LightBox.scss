@@ -1,14 +1,26 @@
+@use '@/sass/variables/colors';
+
 .background {
-    background-color: rgba(0, 0, 0, 0.732);
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    .image-container {
-        .lightbox-img {
-            width: 350px;
-            height: auto;
-            user-select: none;
-        }
+  background-color: rgba(0, 0, 0, 0.732);
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  .image-container {
+    .cross {
+      margin-left: auto;
+      display: block;
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+      &:hover {
+        color: colors.$brown-primary;
+      }
     }
+    .lightbox-img {
+      width: 350px;
+      height: auto;
+      user-select: none;
+    }
+  }
 }

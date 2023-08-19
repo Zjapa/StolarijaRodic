@@ -24,7 +24,7 @@ export const CAMOVO_DRVO =
 
 export const serviceItems = [
     {
-        img: '/images/sobna_vrata/unutrasnja-vrata1.webp',
+        img: '/images/unutrasnja_puno_drvo/slika1.webp',
         title: 'Unutrašnja vrata',
         desc: UNUTRASNJA_VRATA,
         url: '/unutrasnja-vrata-puno-drvo',
@@ -48,13 +48,13 @@ export const serviceItems = [
         url: '/pvc-stolarija',
     },
     {
-        img: '/images/sobna_vrata/slika16.webp',
+        img: '/images/medijapan_folija/slika1.webp',
         title: 'Unutrašnja vrata - medijapan',
         desc: MEDIJAPAN_UNUTRASNJA_VRATA,
         url: '/medijapan-folija',
     },
     {
-        img: '/images/drveni_prozori/slika11.webp',
+        img: '/images/drveni_prozori/camovo-drvo8.webp',
         title: 'Drveni prozori - čamovo drvo',
         desc: CAMOVO_DRVO,
         url: '/camovo-drvo',

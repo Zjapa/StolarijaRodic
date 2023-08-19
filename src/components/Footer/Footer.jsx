@@ -4,14 +4,24 @@ import { navigationConfig } from '../Header/nav-const';
 import { FOOTER_CONTACT_US, FOOTER_SITE_MAP_TITLE, contactItems } from './footer-const';
 import Image from 'next/image';
 import './Footer.scss';
+import { Button } from '../Button/Button';
 
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="container footer-wrapper">
-                <section className="footer-section">
-                    <Image src="/images/logo.png" width="100" height="40" alt="Stolarija Rodic Logo" className="logo-footer" />
-                    {/* <Button link="/kontakt" text="Kontakt" /> */}
+                <section className="footer-section logo-section">
+                    <Image
+                        src="/images/svg/LogoWhite.svg"
+                        width="200"
+                        height="45"
+                        alt="Stolarija Rodic Logo"
+                        className="logo-footer"
+                    />
+                    <div className="logo-text">
+                        <p>Kvalitetna i moderna stolarija u vašem domu. Vaši prozori su naša briga!</p>
+                    </div>
+                    <Button link="/kontakt" text="Kontakt" />
                 </section>
                 <section className="footer-section">
                     <h2 className="footer-section-title">{FOOTER_SITE_MAP_TITLE}</h2>

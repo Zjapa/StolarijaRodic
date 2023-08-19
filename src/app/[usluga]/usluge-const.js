@@ -9,7 +9,16 @@
 // import veluxZastitaSvetlostImg from '/images/velux/zastita_od_svetlosti.webp';
 // import veluxOvlasceniProdavacImg from '/images/velux/ovlašteni_prodavac.webp';
 
-import { camovoDrvoPhotos } from './photos';
+import {
+    camovoDrvoPhotos,
+    drvAluminijumPhotos,
+    drveniKapakPhotos,
+    medijapanFarbaniPhotos,
+    medijapanFolijaPhotos,
+    medijapanFurniranPhotos,
+    ulaznaVrataPhotos,
+    unutrasnjaPunoDrvo,
+} from './photos';
 
 const CAMOVO_DRVO =
     'Asortiman naših prozora je širok iz prostog razloga, jer delimično podržavamo argumente pristalica koje zastupaju svaki od ova četiri tipa stolarije, a pošto želimo da zadovoljimo svačiji ukus potrudili smo se da od prozora koje želite napravimo proizvod vrhunskog kvaliteta u svojoj klasi.';
@@ -97,9 +106,6 @@ const UNUTRASNJA_VRATA_4 =
 const UNUTRASNJA_VRATA_5 =
     'Zato u koliko želite klizna vrata, staklena vrata,kupatilska vrata, ulazna drvena vrata ili bilo koji sličan model kontaktirajte nas,da predmet montiran u vašoj kući ili stanu oplemenimo i napravimo ukras vašeg doma.';
 
-
-
-
 export const usluge = {
     'camovo-drvo': {
         pageTitle: 'Čamovo drvo',
@@ -120,7 +126,7 @@ export const usluge = {
             'Termo staklo 4/16/4',
             '2 dihtung gume',
         ],
-       photos: camovoDrvoPhotos, 
+        photos: camovoDrvoPhotos,
     },
     'drvo-aluminijum': {
         pageTitle: 'Drvo aluminijum',
@@ -151,6 +157,7 @@ export const usluge = {
             'Dobra stabilnost',
             'Veliki izbor boja drvenog i aluminijumskog dela prozora',
         ],
+        photos: drvAluminijumPhotos,
     },
     'drveni-kapak': {
         pageTitle: 'Drveni kapak',
@@ -165,6 +172,7 @@ export const usluge = {
             { title: 'Ulazna vrata - puno drvo', url: 'ulazna-vrata-puno-drvo' },
         ],
         sideList: ['Čamovo drvo (jela i smreka)', 'Profil 40mm', 'AGB okovi i fiksna rebra'],
+        photos: drveniKapakPhotos,
     },
     'ulazna-vrata-puno-drvo': {
         pageTitle: 'Ulazna vrata od punog drveta',
@@ -188,6 +196,7 @@ export const usluge = {
             'Štok gredice',
             'Cena vrata je na upit',
         ],
+        photos: ulaznaVrataPhotos,
     },
     'medijapan-folija': {
         pageTitle: 'Medijapan vrata obložena folijom',
@@ -202,6 +211,7 @@ export const usluge = {
             { title: 'Unutrašnja vrata - puno drvo', url: 'unutrasnja-vrata-puno-drvo' },
         ],
         sideList: ['Medijapan folija', '70, 80, 90 / 205 x 15'],
+        photos: medijapanFolijaPhotos,
     },
     'medijapan-farbani': {
         pageTitle: 'medijapan farbani',
@@ -216,6 +226,7 @@ export const usluge = {
             { title: 'Unutrašnja vrata - puno drvo', url: 'unutrasnja-vrata-puno-drvo' },
         ],
         sideList: ['Medijapan farbani', '70, 80, 90 / 205 x 15'],
+        photos: medijapanFarbaniPhotos,
     },
     'medijapan-furnirani': {
         pageTitle: 'medijapan furnirani',
@@ -236,6 +247,7 @@ export const usluge = {
             { title: 'Unutrašnja vrata - puno drvo', url: 'unutrasnja-vrata-puno-drvo' },
         ],
         sideList: ['Medijapan farbani', '70, 80, 90 / 205 x 15'],
+        photos: medijapanFurniranPhotos,
     },
     'unutrasnja-vrata-puno-drvo': {
         pageTitle: 'Unutrašnja vrata od punog drveta',
@@ -250,6 +262,7 @@ export const usluge = {
             { title: 'Unutrašnja vrata - puno drvo', url: 'unutrasnja-vrata-puno-drvo' },
         ],
         sideList: ['Čamovo drvo dimenzije 100x205', 'Jela, smreka AGB brava', '3 šarke', '1 dihtung gume'],
+        photos: unutrasnjaPunoDrvo,
     },
 
     'velux-zastita-svetlost': {

@@ -1,0 +1,123 @@
+@use '@/sass/variables/colors';
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 500px;
+    pointer-events: auto;
+    img {
+        height: 100%;
+        width: calc(100% / 3);
+        object-fit: cover;
+        object-position: center;
+        user-select: none;
+    }
+    // .image-container {
+    //     position:relative;
+    //     width: 300%;
+    //     height: 100%;
+    //     left: -100%;
+    //     display: flex;
+     
+    // }
+
+    .slider-arrow-left {
+        position: absolute;
+        font-size: 30px;
+        color: white;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0 20px;
+        left: 0;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .slider-arrow-right {
+        position: absolute;
+        font-size: 30px;
+        color: white;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0 20px;
+        right: 0;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .indicator {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: white;
+            border: 0.5px solid colors.$brown-primary;
+            &.active {
+                background-color: colors.$brown-primary;
+            }
+        }
+    }
+}
+@keyframes carousel {
+    0% {
+        left: 0;
+    }
+    11% {
+        left: 0;
+    }
+    12.5% {
+        left: -100%;
+    }
+    23.5% {
+        left: -100%;
+    }
+    25% {
+        left: -200%;
+    }
+    36% {
+        left: -200%;
+    }
+    37.5% {
+        left: -300%;
+    }
+    48.5% {
+        left: -300%;
+    }
+    50% {
+        left: -400%;
+    }
+    61% {
+        left: -400%;
+    }
+    62.5% {
+        left: -300%;
+    }
+    73.5% {
+        left: -300%;
+    }
+    75% {
+        left: -200%;
+    }
+    86% {
+        left: -200%;
+    }
+    87.5% {
+        left: -100%;
+    }
+    98.5% {
+        left: -100%;
+    }
+    100% {
+        left: 0;
+    }
+}

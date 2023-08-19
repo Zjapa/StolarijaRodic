@@ -11,6 +11,15 @@ footer {
         @media screen and (max-width: 768px) {
             gap: 40px;
         }
+        .logo-section {
+            // justify-content: space-between;
+            .logo-text {
+                p {
+                    margin: 40px 0;
+                }
+                color: white;
+            }
+        }
         .footer-section {
             display: flex;
             flex-direction: column;
@@ -18,9 +27,9 @@ footer {
             @media screen and (max-width: 768px) {
                 margin-left: 0px;
             }
-            .logo-footer {
-                margin-bottom: auto;
-            }
+            // .logo-footer {
+            //     margin-bottom: auto;
+            // }
             .footer-section-title {
                 position: relative;
                 padding-bottom: 10px;

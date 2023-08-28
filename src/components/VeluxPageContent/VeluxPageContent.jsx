@@ -22,36 +22,45 @@ const VeluxPageContent = ({ veluxUslugaContent, url }) => {
         <div className="container velux-service-wrapper">
             <div className="velux-service-header">
                 <Image src={img} alt={pageTitle} width={300} height={300} className="velux-service-header-image" />
-                <p className="velux-service-header-text">{imageText}</p>
+                <div className="velux-header-text-container">
+                    <p className="velux-service-header-text">{imageText}</p>
+                    <div className="velux-header-garant">
+                        <div className="years-garant">
+                            <h2 className="velux-service-item-subtitle">{subtitle}</h2>
+                            {tableInfoList && (
+                                <>
+                                    <ul className="velux-service-list">
+                                        {tableInfoList.map((item) => (
+                                            <li key={item} className="velux-service-list-item">
+                                                {item}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </>
+                            )}
+                        </div>
+                        <div className="years-garant">
+                        {subtitleSecond && <h2 className="velux-service-item-subtitle">{subtitleSecond}</h2>}
+                            {tableInfoListSecond && (
+                                <>
+                                    <ul className="velux-service-list">
+                                        {tableInfoListSecond.map((item) => (
+                                            <li key={item} className="velux-service-list-item">
+                                                {item}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </>
+                            )}
+                        </div>
+                    </div>
+                </div>
+
+         
             </div>
             <div className="velux-service-main">
                 <div className="velux-service-content">
-                    <h2 className="velux-service-item-subtitle">{subtitle}</h2>
-                    {tableInfoList && (
-                        <>
-                            <ul className="velux-service-list">
-                                {tableInfoList.map((item) => (
-                                    <li key={item} className="velux-service-list-item">
-                                        {item}
-                                    </li>
-                                ))}
-                            </ul>
-                        </>
-                    )}
-                    {tableContent && <ContentTable tableContent={tableContentSecond} />}
-                    {subtitleSecond && <h2 className="velux-service-item-subtitle">{subtitleSecond}</h2>}
-                    {tableInfoListSecond && (
-                        <>
-                            <ul className="velux-service-list">
-                                {tableInfoListSecond.map((item) => (
-                                    <li key={item} className="velux-service-list-item">
-                                        {item}
-                                    </li>
-                                ))}
-                            </ul>
-                        </>
-                    )}
-                    {tableContentSecond && <ContentTable tableContent={tableContentSecond} />}
+            
                 </div>
                 <aside className="service-page-sidebar">
                     <div className="service-page-side-navigation">

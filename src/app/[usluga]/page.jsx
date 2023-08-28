@@ -56,6 +56,11 @@ const page = ({ params }) => {
         <section className="service-page-item">
             <Banner title={pageTitle} />
             {/* <h1 className="service-page-item-title">{pageTitle}</h1> */}
+            {uslugaContent?.photos && (
+                <div className="gallery-container">
+                    <Gallery photos={uslugaContent?.photos} />
+                </div>
+            )}
             {uslugaContent && (
                 <>
                     <div className="container service-page-item-wrapper">
@@ -112,11 +117,6 @@ const page = ({ params }) => {
                             </ul>
                         </aside>
                     </div>
-                    {uslugaContent?.photos && (
-                        <div className="gallery-container">
-                            <Gallery photos={uslugaContent?.photos} />
-                        </div>
-                    )}
                 </>
             )}
 

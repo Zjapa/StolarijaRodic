@@ -3,8 +3,9 @@ import Link from 'next/link';
 import { navigationConfig } from '../Header/nav-const';
 import { FOOTER_CONTACT_US, FOOTER_SITE_MAP_TITLE, contactItems } from './footer-const';
 import Image from 'next/image';
-import './Footer.scss';
 import { Button } from '../Button/Button';
+import { CiFacebook, CiInstagram } from 'react-icons/ci';
+import './Footer.scss';
 
 const Footer = () => {
     return (
@@ -23,7 +24,7 @@ const Footer = () => {
                     </div>
                     <Button link="/kontakt" text="Kontakt" />
                 </section>
-                <section className="footer-section">
+                <section className="footer-section sitemap">
                     <h2 className="footer-section-title">{FOOTER_SITE_MAP_TITLE}</h2>
                     <div className="footer-section-items">
                         {navigationConfig.map((navLink) => (
@@ -46,6 +47,16 @@ const Footer = () => {
                         ))}
                     </div>
                 </section>
+            </div>
+            <hr className="footer-line" />
+            <div className="container footer-bottom">
+                <a href="tel:+38166208390">
+                    &copy; {new Date().getFullYear()} <span className='copyright-text-decor'>Stolarija Rodić</span>
+                </a>
+
+                <a href="mailto:japax97@gmail.com">
+                    Created by <span className='copyright-text-decor'>Pavle Prelić</span>
+                </a>
             </div>
         </footer>
     );

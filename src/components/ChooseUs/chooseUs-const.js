@@ -24,7 +24,7 @@ export const chooseUsItems = [
     {
         icon: '/images/svg/design.svg',
         title: 'Kreativan',
-        desc: 'Dizaj',
+        desc: 'Dizajn',
     },
     {
         icon: '/images/svg/support.svg',

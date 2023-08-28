@@ -1,53 +1,54 @@
 export const camovoDrvoPhotos = [
     {
         img: '/images/camovo-drvo-galerija/camovo-drvo.jpg',
-        title: 'Breakfast',
+        title: 'Čamovo drvo slika 1 ',
+    },
+    {
+        img: '/images/camovo-drvo-galerija/camovo-drvo8.jpg',
+        title: 'Čamovo drvo slika 2',
+    },
+    {
+        img: '/images/camovo-drvo-galerija/camovo-drvo9.jpg',
+        title: 'Čamovo drvo slika 3',
+    },
+    {
+        img: '/images/camovo-drvo-galerija/camovo-drvo10.jpg',
+        title: 'Čamovo drvo slika 4',
+    },
+    {
+        img: '/images/camovo-drvo-galerija/camovo-drvo11.jpg',
+        title: 'Čamovo drvo slika 5',
     },
     {
         img: '/images/camovo-drvo-galerija/camovo-drvo2.jpg',
-        title: 'Burger',
+        title: 'Čamovo drvo slika 6',
     },
     {
         img: '/images/camovo-drvo-galerija/camovo-drvo3.jpg',
-        title: 'Camera',
+        title: 'Čamovo drvo slika 7',
     },
     {
         img: '/images/camovo-drvo-galerija/camovo-drvo4.jpg',
-        title: 'Coffee',
+        title: 'Čamovo drvo slika 8',
         cols: 2,
     },
     {
         img: '/images/camovo-drvo-galerija/camovo-drvo5.jpg',
-        title: 'Hats',
+        title: 'Čamovo drvo slika 9',
         cols: 2,
     },
     {
         img: '/images/camovo-drvo-galerija/camovo-drvo6.jpg',
-        title: 'Honey',
+        title: 'Čamovo drvo slika 10',
     },
     {
         img: '/images/camovo-drvo-galerija/camovo-drvo7.jpg',
-        title: 'Basketball',
+        title: 'Čamovo drvo slika 11',
     },
-    {
-        img: '/images/camovo-drvo-galerija/camovo-drvo8.jpg',
-        title: 'Fern',
-    },
-    {
-        img: '/images/camovo-drvo-galerija/camovo-drvo9.jpg',
-        title: 'Mushrooms',
-    },
-    {
-        img: '/images/camovo-drvo-galerija/camovo-drvo10.jpg',
-        title: 'dasdsad',
-    },
-    {
-        img: '/images/camovo-drvo-galerija/camovo-drvo11.jpg',
-        title: 'baba',
-    },
+
     {
         img: '/images/camovo-drvo-galerija/camovo-drvo12.jpg',
-        title: 'Tzdada',
+        title: 'Čamovo drvo slika 12',
     },
 ];
 

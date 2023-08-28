@@ -21,10 +21,45 @@
             object-fit: contain;
             transform: scale(1.1);
         }
-        .velux-service-header-text {
-            margin-top: 30px;
-            font-family: var(--font-lato);
-            line-height: 1.7em;
+        .velux-header-text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .velux-service-header-text {
+                margin-top: 30px;
+                font-family: var(--font-lato);
+                line-height: 1.7em;
+            }
+            .velux-header-garant {
+                display: flex;
+                @media screen and (max-width: 768px) {
+                    flex-direction: column;
+                    gap: 0px;
+                }
+                .years-garant {
+                    .velux-service-item-subtitle {
+                        @include title.titleStyle;
+                        margin-bottom: 20px;
+                        text-transform: lowercase;
+                    }
+                    .velux-service-list {
+                        list-style: none;
+                        .velux-service-list-item {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 20px;
+                            font-family: var(--font-lato);
+                            color: colors.$dark-grey;
+                            font-size: 16px;
+                            &::before {
+                                content: '•';
+                                padding-right: 10px;
+                                color: colors.$brown-primary;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     .velux-service-main {
@@ -36,27 +71,6 @@
         }
         .velux-service-content {
             flex: 2;
-            .velux-service-item-subtitle {
-                @include title.titleStyle;
-                margin-bottom: 20px;
-                text-transform: lowercase;
-            }
-            .velux-service-list {
-                list-style: none;
-                .velux-service-list-item {
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 20px;
-                    font-family: var(--font-lato);
-                    color: colors.$dark-grey;
-                    font-size: 16px;
-                    &::before {
-                        content: '•';
-                        padding-right: 10px;
-                        color: colors.$brown-primary;
-                    }
-                }
-            }
         }
         .service-page-sidebar {
             flex: 1;

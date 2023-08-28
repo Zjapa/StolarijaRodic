@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import './Gallery.scss';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import LightBox from './LightBox/LightBox';
+import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
 const Gallery = ({ photos }) => {
     const [lightBoxImage, setLightBoxImage] = useState('');
@@ -28,8 +29,9 @@ const Gallery = ({ photos }) => {
         <div className="wrapper">
             {photos?.length > 4 && (
                 <>
-                    <FaAngleLeft id="left" className="icon-left" onClick={() => handleNav('left')} />
-                    <FaAngleRight id="right" className="icon-right" onClick={handleNav} />
+                      <BsChevronLeft id="left" className="icon-left"  onClick={() => handleNav('left')} />
+                
+                    <BsChevronRight id="right" className="icon-right"  onClick={handleNav} />
                 </>
             )}
             <div ref={carouselRef} className="carousel">

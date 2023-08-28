@@ -1,5 +1,3 @@
-
-
 export const NASE_USLUGE = 'Naše Usluge';
 
 export const UNUTRASNJA_VRATA =
@@ -24,28 +22,10 @@ export const CAMOVO_DRVO =
 
 export const serviceItems = [
     {
-        img: '/images/unutrasnja_puno_drvo/slika1.webp',
-        title: 'Unutrašnja vrata',
-        desc: UNUTRASNJA_VRATA,
-        url: '/unutrasnja-vrata-puno-drvo',
-    },
-    {
-        img: '/images/pun_drvo/Ulazna-vrata.webp',
-        title: 'Ulazna vrata',
-        desc: DRVENA_STOLARIJA,
-        url: '/ulazna-vrata-puno-drvo',
-    },
-    {
-        img: '/images/velux/Velux-img.webp',
-        title: 'Velux prozori',
-        desc: VELUX_PROZORI,
-        url: '/velux-ovlasceni-prodavac',
-    },
-    {
-        img: '/images/pvc/pvc-stolarija.webp',
-        title: 'Pvc stolarija',
-        desc: PVC_STOLARIJA,
-        url: '/pvc-stolarija',
+        img: '/images/drveni_prozori/camovo-drvo8.webp',
+        title: 'Drveni prozori - čamovo drvo',
+        desc: CAMOVO_DRVO,
+        url: '/camovo-drvo',
     },
     {
         img: '/images/medijapan_folija/slika1.webp',
@@ -54,9 +34,28 @@ export const serviceItems = [
         url: '/medijapan-folija',
     },
     {
-        img: '/images/drveni_prozori/camovo-drvo8.webp',
-        title: 'Drveni prozori - čamovo drvo',
-        desc: CAMOVO_DRVO,
-        url: '/camovo-drvo',
+        img: '/images/velux/Velux-img.webp',
+        title: 'Velux prozori',
+        desc: VELUX_PROZORI,
+        url: '/velux-ovlasceni-prodavac',
+    },
+    {
+        img: '/images/pun_drvo/Ulazna-vrata.webp',
+        title: 'Ulazna vrata',
+        desc: DRVENA_STOLARIJA,
+        url: '/ulazna-vrata-puno-drvo',
+    },
+    {
+        img: '/images/unutrasnja_puno_drvo/slika1.webp',
+        title: 'Unutrašnja vrata',
+        desc: UNUTRASNJA_VRATA,
+        url: '/unutrasnja-vrata-puno-drvo',
+    },
+
+    {
+        img: '/images/pvc/pvc-stolarija.webp',
+        title: 'Pvc stolarija',
+        desc: PVC_STOLARIJA,
+        url: '/pvc-stolarija',
     },
 ];

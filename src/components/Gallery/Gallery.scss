@@ -3,7 +3,8 @@
 .wrapper {
     max-width: 1200px;
     position: relative;
-    padding: 0 20px;
+    padding: 0 40px;
+    height: 280px;
     :is(.icon-left, .icon-right) {
         top: 50%;
         height: 46px;
@@ -16,26 +17,27 @@
         background: #ffff;
         border-radius: 50%;
         padding: 10px;
-        transform: translateY(-50%);
         box-shadow: 0 1px 4px 1px rgba(0, 0, 50, 0.3);
+        z-index: 1;
     }
     .icon-left {
         left: 0;
+        transform: translate(40%,-50%);
     }
     .icon-right {
         right: 0;
+        transform: translate(-40%,-50%);
     }
     .carousel {
         white-space: nowrap;
         overflow: hidden;
         scroll-behavior: smooth;
-        border-radius: 10px;
         .gallery-img {
             object-fit: cover;
             height: 280px;
             width: calc(100% / 4);
             margin-left: 14px;
-            box-shadow: 0 1px 4px 1px rgba(0, 0, 50, 0.3);
+            // box-shadow: 0 1px 4px 1px rgba(0, 0, 50, 0.3);
             user-select: none;
             cursor: pointer;
             &:first-child {

@@ -8,15 +8,11 @@ export const metadata = {
     title: 'Stolarija Rodić | Početna',
     description:
         'Stolarija Rodić se bavi proizvodnjom i prodajom drvene,drvo-aluminijum,PVC i aluminijumske stolarije. Ovlašćeni smo distributer VELUX krovnih prozora.',
-    keywords: 'Stolarija, PVC, Velux',
+    keywords: 'Stolarija, PVC, Velux, Rodić, Drvo, Staklo, Vrata',
     alternates: {
         canonical: `https://www.stolarijarodic.com/`,
     },
-    rules: {
-        userAgent: '*',
-        allow: '/',
-        disallow: '/private/',
-    },
+
 };
 
 export default function RootLayout({ children }) {

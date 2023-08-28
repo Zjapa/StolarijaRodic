@@ -39,6 +39,10 @@ export default function sitemap() {
             url: `${baseUrl}/pvc-stolarija`,
             lastModified: new Date(),
         },
+        {
+            url: `${baseUrl}/blog`,
+            lastModified: new Date(),
+        },
         ...uslugaUrl,
     ];
 }

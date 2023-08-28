@@ -1,35 +1,56 @@
 @use '@/sass/variables/colors';
 
 .header-top {
-  background-color: colors.$dark-grey;
-  .header-top-items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 70px;
-    padding: 20px 0px;
-    gap: 50px;
-    @media screen and (max-width: 900px) {
-      flex-direction: column;
+    background-color: colors.$dark-grey;
+    .header-top-container {
+        max-width: 1600px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
     }
-    .header-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      @media screen and (max-width: 900px) {
-        width: min(100%, 350px);
-      }
+    .header-top-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 70px;
+        padding: 20px 0px;
+        gap: 50px;
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+        }
+        .header-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            @media screen and (max-width: 900px) {
+                width: min(100%, 350px);
+            }
+        }
+        .item-title {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #fff;
+        }
+        .item-desc {
+            font-size: 14px;
+            font-family: var(--font-lato);
+            color: colors.$grey;
+        }
+        .social-icons {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            .fb-icon,
+            .ig-icon {
+                font-size: 25px;
+                cursor: pointer;
+                transform: all .5s ease;
+                &:hover {
+                    color: colors.$brown-primary;
+                }
+            }
+        }
     }
-    .item-title {
-      font-weight: 600;
-      text-transform: uppercase;
-      font-size:14px;
-      color: #fff;
-    }
-    .item-desc {
-      font-size:14px;
-      font-family: var(--font-lato);
-      color: colors.$grey;
-    }
-  }
 }

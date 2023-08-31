@@ -1,142 +1,160 @@
-@use '@/sass/mixins/title';
-@use '@/sass/variables/colors';
+@use "@/sass/mixins/title";
+@use "@/sass/variables/colors";
 .service-page-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+  .service-page-item-title {
+    @include title.titleStyle;
+    margin-top: 80px;
     margin-bottom: 80px;
-    .service-page-item-title {
-        @include title.titleStyle;
-        margin-top: 80px;
-        margin-bottom: 80px;
-        font-weight: bold;
-        text-align: center;
+    font-weight: bold;
+    text-align: center;
 
-        &::after {
-            content: '';
-            position: absolute;
-            display: block;
-            bottom: 0;
-            // left: 0%;
-            left: 50%;
-            transform: translate(-50%);
-            height: 2px;
-            margin: 0 auto;
-            width: 50%;
-            background-color: colors.$brown-primary;
-        }
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      bottom: 0;
+      // left: 0%;
+      left: 50%;
+      transform: translate(-50%);
+      height: 2px;
+      margin: 0 auto;
+      width: 50%;
+      background-color: colors.$brown-primary;
     }
-    .service-page-item-wrapper {
-        max-width: 1200px;
-        // padding-top: 80px;
-        padding-bottom: 80px;
-        display: flex;
-        gap: 60px;
-        @media screen and (max-width: 768px) {
-            flex-direction: column;
-            gap: 30px;
-        }
-        .service-page-content {
-            flex: 2;
-            .service-page-item-image {
-                width: 100%;
-                object-fit: cover;
-                object-position: left;
-                // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-                border: 1px solid colors.$brown-primary;
-                height: 350px;
-                margin-bottom: 40px;
-            }
-            .service-page-item-subtitle {
-                @include title.titleStyle;
-                margin-bottom: 20px;
-            }
-            .desc-text {
-                margin-bottom: 20px;
-                font-family: var(--font-lato);
-                line-height: 1.7em;
-                // color: colors.$grey;
-            }
-            .service-page-item-subtitleSecond {
-                @include title.titleStyle;
-                margin: 20px 0px;
-                // font-weight: 500;
-                text-transform: capitalize;
-            }
-            .service-page-list {
-                list-style: none;
-                .service-page-list-item {
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 20px;
-                    font-family: var(--font-lato);
-                    color: colors.$dark-grey;
-                    font-size: 16px;
-                    &::before {
-                        content: '•';
-                        padding-right: 10px;
-                        color: colors.$brown-primary;
-                    }
-                }
-            }
-        }
-        .service-page-sidebar {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            @media screen and (max-width: 768px) {
-                flex-direction: column-reverse;
-            }
-            .service-page-side-navigation {
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 30px;
-                gap: 15px;
-                min-height: 410px;
-
-                .side-nav-title {
-                    color: colors.$grey;
-                    width: 100%;
-
-                    padding: 20px;
-                    font-family: var(--font-lato);
-                    box-shadow: 0 1px 4px 0px rgba(0, 0, 50, 0.3);
-                    transition: all 0.1s ease-in-out;
-                    &:hover {
-                        box-shadow: 0 0px 4px 1px rgba($color: colors.$brown-active, $alpha: 1);
-                        color: colors.$brown-active;
-                    }
-                    &.active {
-                        background-color: colors.$brown-active;
-                        box-shadow: 0 0px 4px 1px rgba($color: colors.$brown-active, $alpha: 1);
-                        color: white;
-                    }
-                }
-            }
-            .service-page-sidebar-list {
-                list-style: none;
-                margin-bottom: 30px;
-                .service-page-sidebar-item {
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 20px;
-                    font-family: var(--font-lato);
-                    color: colors.$grey;
-                    font-size: 16px;
-                    &::before {
-                        content: '•';
-                        padding-right: 10px;
-                        color: colors.$brown-primary;
-                    }
-                }
-            }
-        }
+  }
+  .service-page-item-wrapper {
+    max-width: 1200px;
+    // padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    gap: 60px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 30px;
     }
-    .gallery-container{
-        max-width: 1200px;
+    .service-page-content {
+      flex: 2;
+      .image-top {
         width: 100%;
-        margin: 0 auto;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+      }
+      .velux-service-content {
+        flex: 2;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        .grid-image {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+        }
+        margin-bottom: 30px;
+      }
+      .service-page-item-image {
+        width: 100%;
+        object-fit: cover;
+        object-position: left;
+        // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border: 1px solid colors.$brown-primary;
+        height: 350px;
+        margin-bottom: 40px;
+      }
+      .service-page-item-subtitle {
+        @include title.titleStyle;
+        margin-bottom: 20px;
+      }
+      .desc-text {
+        margin-bottom: 20px;
+        font-family: var(--font-lato);
+        line-height: 1.7em;
+        // color: colors.$grey;
+      }
+      .service-page-item-subtitleSecond {
+        @include title.titleStyle;
+        margin: 20px 0px;
+        // font-weight: 500;
+        text-transform: capitalize;
+      }
+      .service-page-list {
+        list-style: none;
+        .service-page-list-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+          font-family: var(--font-lato);
+          color: colors.$dark-grey;
+          font-size: 16px;
+          &::before {
+            content: "•";
+            padding-right: 10px;
+            color: colors.$brown-primary;
+          }
+        }
+      }
     }
+    .service-page-sidebar {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+      }
+      .service-page-side-navigation {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        gap: 15px;
+        min-height: 410px;
+
+        .side-nav-title {
+          color: colors.$grey;
+          width: 100%;
+          background-color: white;
+          padding: 20px;
+          font-family: var(--font-lato);
+          box-shadow: 0 1px 4px 0px rgba(0, 0, 50, 0.3);
+          transition: all 0.1s ease-in-out;
+          &:hover {
+            box-shadow: 0 0px 4px 1px
+              rgba($color: colors.$brown-active, $alpha: 1);
+            color: colors.$brown-active;
+          }
+          &.active {
+            background-color: colors.$brown-active;
+            box-shadow: 0 0px 4px 1px
+              rgba($color: colors.$brown-active, $alpha: 1);
+            color: white;
+          }
+        }
+      }
+      .service-page-sidebar-list {
+        list-style: none;
+        margin-bottom: 30px;
+        .service-page-sidebar-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+          font-family: var(--font-lato);
+          color: colors.$grey;
+          font-size: 16px;
+          &::before {
+            content: "•";
+            padding-right: 10px;
+            color: colors.$brown-primary;
+          }
+        }
+      }
+    }
+  }
+  .gallery-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
 }

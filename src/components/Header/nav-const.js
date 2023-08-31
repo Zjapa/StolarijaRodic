@@ -24,7 +24,6 @@ export const navigationConfig = [
         dropdown: [
             { title: 'Medijapan - folija', url: 'medijapan-folija' },
             { title: 'Medijapan - farbani', url: 'medijapan-farbani' },
-            { title: 'Medijapan - furnirani', url: 'medijapan-furnirani' },
             { title: 'Unutrašnja vrata - puno drvo', url: 'unutrasnja-vrata-puno-drvo' },
         ],
     },

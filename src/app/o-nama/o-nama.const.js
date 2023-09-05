@@ -11,4 +11,4 @@ export const STOLARIJA_RODIC_DESC_4 = `
 Pored osnovne delatnosti, više od 10 godina smo i ovlašćeni distributer i prodavac proizvoda danske kompanije VELUX, koja je prepoznata kao svetski poznat i renomirani proizvođač krovnih prozora i dodatne opreme za krovne prozore, što dodatno potvrđuje ozbiljnost našeg poslovanja i pristupa klijentima.`;
 
 export const STOLARIJA_RODIC_DESC_5 = `
-Smatramo da je osnovna vrednost naše kompanije posvećenost, kako u smislu razumevanja potreba naših klijenata, tako i u smislu realizacije svega zamišljenog sa njihove strane, što vas pozivamo da se i lično uverite!;`;
+Smatramo da je osnovna vrednost naše kompanije posvećenost, kako u smislu razumevanja potreba naših klijenata, tako i u smislu realizacije svega zamišljenog sa njihove strane, što vas pozivamo da se i lično uverite!`;

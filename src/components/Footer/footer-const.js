@@ -32,7 +32,7 @@ export const contactItems = [
     },
     {
         icon: '/images/svg/phone.svg', 
-        desc: `+011 26 706 74 | 066/208-390 | 066/208-391`,
+        desc: `011 26 706 74 | 066/208-390 | 066/208-391`,
         alt: 'Slika za broj telefona'
     },
     {

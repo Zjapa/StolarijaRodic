@@ -21,7 +21,7 @@ const Carousel = ({ images }) => {
 
     const imageContainerStyle = {
         position: 'relative',
-        width: '300%',
+        width: '400%',
         height: '100%',
         left: `-${currentImageIndex * 100}%`,
         display: 'flex',

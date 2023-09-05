@@ -73,7 +73,7 @@ export const ulaznaVrataPhotos = [
     title: "Unutrasnja vrata puno drvo slika 1",
   },
   {
-    img: "/images/pun_drvo/ulazna-puno-drvo-2.webp",
+    img: "/images/pun_drvo/Ulazna-vrata.webp",
     title: "Unutrasnja vrata puno drvo slika 2",
   },
   {

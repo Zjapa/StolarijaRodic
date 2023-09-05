@@ -9,6 +9,7 @@ import { images } from '@/components/Carousel/carousel-const';
 export default function Home() {
     return (
         <>
+        
             <Hero/>
             <OurService />
             <AboutUs />
